@@ -100,6 +100,7 @@ body.dark-theme{
     padding-left: var(--mb-0-5);
     margin: 0;
     margin-top: -5px;
+    gap: var(--mb-0-75);
 }
 
 .change-theme{
@@ -189,17 +190,19 @@ img{
     right: 0;
     z-index: var(--z-fixed);
     background-color: var(--body-color);
+    margin-right: var(--mb-0-25);
 }
 
 /* nav styling */
 
 .nav{
-    
+    max-width: 968px;
     height: var(--header-height);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 0;
+    margin-left: var(--mb-0-5);
+    margin-right: var(--mb-0-25);
 }
 
 .nav__logo, .nav__toggle{
