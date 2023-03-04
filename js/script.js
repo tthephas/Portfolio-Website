@@ -39,5 +39,23 @@ if(navToggle){
     })
 }
 
+// menu hide
+if(navClose){
+    navClose.addEventListener('click', () =>{
+        navMenu.classList.remove('show-menu')
+    })
+}
 
 
+
+// Remove menu profile
+const navLink = document.querySelectorAll('.nav__link')
+
+function linkAction(){
+    const navMenu = document.getElementById('nav-menu')
+    // when click on nav links, removes show menu class
+    navMenu.classList.remove('show-menu')
+}
+
+navLink.forEach(n => n.addEventListener('click', linkAction))
+console.log('remove menu profile is working')
