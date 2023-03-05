@@ -698,7 +698,7 @@ img{
     font-size: var(--normal-font-size);
 }
 .qualification__title{
-    font-size: var(--h2-font-size);
+    font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
 
 }
@@ -707,7 +707,12 @@ img{
     display: inline-block;
     font-size: var(--small-font-size);
     margin-bottom: var(--mb-1);
+    color: var(--text-color);
 }
+.transparent_card{
+    background-color: var(--background-body-color);
+    border-color: var(--border-color);
+  }
 
 .mirror-face{
     border: 1px solid #fff;
@@ -764,4 +769,17 @@ img{
     transform: rotateX(0deg);
     transition: 0.8s transform ease;
 }
-
+.qualification__start{
+    display: inline-flex;
+    width: 14px;
+    height: 14px;
+    margin-top: var(--mb-0-5);
+    justify-content: flex-end;
+    background-color: transparent;
+    border-radius: auto;
+    transform: translate(15px, 10px)
+}
+.qualification__start-icon{
+    font-size: var(--h3-font-size);
+    color: var(--mainText);
+}
