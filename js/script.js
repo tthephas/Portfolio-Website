@@ -93,3 +93,41 @@ var swiper = new Swiper(".blog-slider", {
     // mousewheel: true,
     keyboard: true,
   });
+
+
+//   Scroll up section
+
+function scrollUp(){
+    const scrollup = document.getElementById('scroll-up')
+    // when the scroll is higher than 560 viewpoint, then scroll up icon appears
+    if(this.scrollY >= 560) {
+        scrollup.classList.add('show-scroll');
+    } else {
+        scrollup.classList.remove('show-scroll')
+    }
+}
+
+window.addEventListener('scroll', scrollUp)
+
+//  Activate scroll section, highlights
+
+const sections = document.querySelectorAll('section[id]')
+
+function scrollActive() {
+    const scrollY = window.pageYOffset
+
+    sections.forEach(current => {
+        const sectionHeight = current.offsetHeight
+        const sectionTop = current.offsetTop - 50
+        sectionId = current.getAttribute('id')
+
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
+        } else {
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
+        }
+
+    })
+}
+
+window.addEventListener('scroll', scrollActive)
