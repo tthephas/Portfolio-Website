@@ -383,7 +383,7 @@ img{
 
   align-content: center;
   text-align: center;
-  transform: translateX(80px);
+
 }
 
 
@@ -1454,12 +1454,12 @@ form textarea{
     text-align: initial;
   }
 
-  .about__info{
+  /* .about__info{
     justify-content: space-between;
-  }
+  } */
 
   .about__buttons{
-    justify-content: initial;
+    justify-content: center;
   }
   .qualification__button{
     margin: 0 var(--mb-1);
@@ -1483,10 +1483,39 @@ form textarea{
     margin-top: 4.5rem;
   }
 
+
 }
 
 
 /* largest screen */
 @media screen and (min-width: 1024px){
+  .header,
+  .main,
+  .footer__container{
+    padding: 0;
 
+  }
+  #home{
+    height: 85vh;
+  }
+
+  .home__social{
+    transform: translateX(-4rem);
+  }
+  .contact__form{
+    width: 460px;
+  }
+
+  .contact__inputs{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contact__container{
+    padding-left: var(--mb-3);
+    padding-top: var(--mb-3);
+
+  }
+
+  .form{
+    min-width: 700px;
+  }
 }
