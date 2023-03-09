@@ -65,7 +65,7 @@ console.log('remove menu profile is working')
 // import Typewriter from 'typewriter-effect/dist/core';
 
 new Typewriter('#typewriter', {
-  strings: ['Josh Thephasdin', 'Software Developer'],
+  strings: ['Josh Thephasdin'],
   autoStart: true,
   loop: true,
   cursor: "|"
