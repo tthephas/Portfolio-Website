@@ -385,6 +385,9 @@ img{
   text-align: center;
 
 }
+#home-about{
+  text-align: center;
+}
 
 
 
@@ -509,6 +512,7 @@ img{
 
 .about__description{
     text-align: center;
+    margin-left: 3rem;
     margin-bottom: var(--mb-2-5);
 
 }
@@ -519,6 +523,7 @@ img{
 
 }
 .about__info-title{
+    margin-left: 2rem;
     font-size: var(--h2-font-size);
     font-weight: var(--font-semi-bold);
     color: var(--title-color);
@@ -1235,7 +1240,7 @@ form textarea{
 .footer__copy{
     font-size: var(--smaller-font-size);
     text-align: center;
-    color: var(--text-color);
+    color: #fff;
     margin-top: var(--mb-3);
 }
 
